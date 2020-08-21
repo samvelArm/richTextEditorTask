@@ -1,0 +1,28 @@
+.toolbar {
+  .ordered-list-button {
+    background: url("ordered-list.svg");
+    width: 30px;
+    height: 23px;
+    border: none;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #b3e6f5;
+    border-radius: 3px;
+    outline: none;
+    transition: all 100ms;
+    cursor: pointer;
+    &:hover {
+      background-color: #ccf6fd;
+    }
+    &:active {
+      transform: translate(-1px, 1px);
+    }
+    &.toggled {
+      background-color: #89B5C2;
+      &:hover {
+        background-color: #ccf6fd;
+      }
+    }
+  }
+}

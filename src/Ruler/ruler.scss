@@ -1,0 +1,115 @@
+.ruler-wrapper {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  position: relative;
+  .ruler {
+    background-color: #ffffff;
+    background-image:
+      linear-gradient(90deg,
+        rgba(73, 73, 73, 0.5) 0,
+        rgba(73, 73, 73, 0.5) 2%,
+        transparent 2%
+      ),
+      linear-gradient(180deg,
+        #ffffff 50%,
+        transparent 50%
+      ),
+      linear-gradient(90deg,
+        transparent 50%,
+        rgba(73, 73, 73, 0.5) 50%,
+        rgba(73, 73, 73, 0.5) 52%,
+        transparent 52%
+      ),
+      linear-gradient(180deg,
+        #ffffff 70%,
+        transparent 70%
+      ),
+      linear-gradient(90deg,
+        transparent 10%,
+        rgba(73, 73, 73, 0.4) 10%,
+        rgba(73, 73, 73, 0.4) 12%,
+        transparent 12%,
+
+        transparent 20%,
+        rgba(73, 73, 73, 0.4) 20%,
+        rgba(73, 73, 73, 0.4) 22%,
+        transparent 22%,
+
+        transparent 30%,
+        rgba(73, 73, 73, 0.4) 30%,
+        rgba(73, 73, 73, 0.4) 32%,
+        transparent 32%,
+
+        transparent 40%,
+        rgba(73, 73, 73, 0.4) 40%,
+        rgba(73, 73, 73, 0.4) 42%,
+        transparent 42%,
+
+        transparent 60%,
+        rgba(73, 73, 73, 0.4) 60%,
+        rgba(73, 73, 73, 0.4) 62%,
+        transparent 62%,
+
+        transparent 70%,
+        rgba(73, 73, 73, 0.4) 70%,
+        rgba(73, 73, 73, 0.4) 72%,
+        transparent 72%,
+
+        transparent 80%,
+        rgba(73, 73, 73, 0.4) 80%,
+        rgba(73, 73, 73, 0.4) 82%,
+        transparent 82%,
+
+        transparent 90%,
+        rgba(73, 73, 73, 0.4) 90%,
+        rgba(73, 73, 73, 0.4) 92%,
+        transparent 92%
+      );
+    background-size: 50px 20px;
+    background-repeat: repeat-x;
+    min-height: 20px;
+
+
+    white-space:nowrap;
+    font-size:0;
+    margin:0;
+    padding:0px;
+
+    label {
+      font-size:9px;
+      padding-top:2px;
+      display:inline-block;
+      width:100px;
+      text-indent:3px;
+      &:last-child {
+        position: relative;
+        left: -21px;
+      }
+    }
+  }
+  .ruler-actions {
+    position: absolute;
+    top: 0;
+    right: -4px;
+    left: -4px;
+    bottom: 0;
+    .drag-handle-1 {
+      position: absolute;
+      top: -5px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 5px 5px 0 5px;
+      border-color: #007bff transparent transparent transparent;
+    }
+    .drag-handle-2 {
+      position: absolute;
+      bottom: -5px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 5px 5px 5px;
+      border-color: transparent transparent #007bff transparent;
+    }
+  }
+}
